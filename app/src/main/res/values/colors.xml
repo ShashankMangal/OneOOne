@@ -10,5 +10,9 @@
 
 
     <color name="green">#4CAF50</color>
+    <color name="themePink">#a130a2</color>
+    <color name="themePurple">#7a07d6</color>
+    <color name="themePurple2">#FFC107</color>
+
 
 </resources>

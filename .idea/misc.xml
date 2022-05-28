@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/drawable/connecting_gradient.xml" value="0.2255" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/drawable/gray_bg.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1865" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/drawable/new_gradient.xml" value="0.22" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/layout/activity_call.xml" value="0.25104166666666666" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/layout/activity_connecting.xml" value="0.25104166666666666" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/layout/activity_login.xml" value="0.25104166666666666" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/OneOOne/app/src/main/res/layout/activity_welcome.xml" value="0.25104166666666666" />
       </map>
     </option>
