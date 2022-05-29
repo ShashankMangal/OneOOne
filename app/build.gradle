@@ -1,9 +1,15 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
+
 
 android {
     compileSdk 32
+
+    buildFeatures{
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "com.sharkBytesLab.oneoone"
@@ -11,9 +17,11 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -38,4 +46,12 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:5.0.3'
     implementation 'com.mikhaellopez:circularimageview:4.3.0'
+
+
+
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
 }
