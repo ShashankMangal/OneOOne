@@ -39,6 +39,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
+
+        if(mAuth.getCurrentUser() != null)
+        {
+            goToNextActivity();
+        }
+
+
         database = FirebaseDatabase.getInstance();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -57,6 +64,13 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    void goToNextActivity()
+    {
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        finish();
 
     }
 
