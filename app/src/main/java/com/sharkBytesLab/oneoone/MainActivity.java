@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private long coins = 0;
     private String[] permissions = new String[]{Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
     private int requestCode = 1;
+    private  User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                User mUser = snapshot.getValue(User.class);
+                mUser = snapshot.getValue(User.class);
                 coins = mUser.getCoins();
                 binding.coins.setText("You have : " + coins);
 
@@ -70,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 if(coins > 5)
                 {
 
-                    startActivity(new Intent(MainActivity.this, ConnectingActivity.class));
+                    Intent intent = new Intent(MainActivity.this, ConnectingActivity.class);
+                    intent.putExtra("profile",mUser.getProfile());
+                    startActivity(intent);
 
                 }
                 else

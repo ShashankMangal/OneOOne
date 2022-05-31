@@ -22,6 +22,7 @@
     </com.airbnb.lottie.LottieAnimationView>
 
     <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/connecting_profile"
         android:layout_width="112dp"
         android:layout_height="112dp"
         android:src="@drawable/user"
